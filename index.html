@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ratios de Colesterol</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen p-4">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+        <h2 class="text-xl font-bold mb-4">Calculadora de Ratios de Colesterol</h2>
+
+        <label class="block">Colesterol Total:</label>
+        <input type="number" id="colTotal" class="input-field">
+
+        <label class="block">Colesterol HDL:</label>
+        <input type="number" id="colHDL" class="input-field">
+
+        <label class="block">Colesterol LDL:</label>
+        <input type="number" id="colLDL" class="input-field">
+
+        <label class="block">Triglicéridos:</label>
+        <input type="number" id="trigliceridos" class="input-field">
+
+        <button onclick="calcularRatios()" class="btn-primary">Calcular</button>
+        <button onclick="limpiarCampos()" class="btn-secondary">Borrar</button>
+
+        <div id="resultados" class="mt-4 text-center"></div>
+    </div>
+
+    <audio id="alertaSonido" src="https://www.fesliyanstudios.com/play-mp3/4388"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
